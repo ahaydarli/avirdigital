@@ -1,0 +1,37 @@
+{% extends "main.html" %}
+{% block title %}{{ portfolio.title }} {% endblock %}
+{% block content %}
+
+    <!-- Portfolio Single Area -->
+    <section class="portfolio_single ps_2">
+        <div class="container">
+            <div class="tittle_area">
+                <div class="tittle">
+                    <h2>{{ portfolio.title }}</h2>
+                </div>
+                <ul class="company_info">
+                    <li><b>{{ _('Client') }}</b>{{ portfolio.customer }}</li>
+                    <li><b>{{ _('Date') }}</b>{{ portfolio.date |date:'F d, Y' }}</li>
+                    <li><b>{{ _('Live demo') }}</b><a href="{{ portfolio.url }}">{{ portfolio.url }}</a></li>
+                </ul>
+            </div>
+            <div class="carousel slide carousel-fade img_slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img width="100%" src="{{ portfolio.image_back.url }}" alt="">
+                        <div class="about_project">
+                            <h6>{{ _('ABOUT THE PROJECT') }}</h6>
+                            {{ portfolio.body |safe }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="images_gallery row">
+                 {% for image in images %}
+                     <img src="{{ image.file.url }}" alt="" class="col-md-6">
+                 {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Single Area -->
+{% endblock %}

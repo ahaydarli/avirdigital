@@ -1,0 +1,52 @@
+{% extends 'main.html' %}
+{% block title %} {{ _('Portfolio') }} {% endblock %}
+
+{% load static %}
+{% block content %}
+  <!-- Pages Banner Area -->
+    <section class="pages_banner" id="parallax">
+       <img src="{% static 'images/img/bf-3.png' %}" alt="" class="layer layer_1" data-depth="0.10">
+       <img src="{% static 'images/img/bg-2.png' %}" alt="" class="layer layer_2" data-depth="0.35">
+        <div class="container">
+            <img src="{% static 'images/portfolio.png' %}" alt="" class="bannar_img wow fadeInRight">
+            <h2 class="wow fadeInUp">{{ _('portfolio_header_text') }}</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.3s">{{ _('portfolio_sub_text') }}</p>
+
+        </div>
+    </section>
+    <!-- End Pages Banner Area -->
+
+    <!-- Portfolio grid Area -->
+    <section class="portfolio_grid pg_2">
+       <div class="container">
+            <div class="portfolio_tittle">
+                <h4>{{ _('Awesome Portfolio') }}</h4>
+                <h2>{{ _('Success Stories See How We Helped Our Clients') }}</h2>
+                <ul class="protfoli_filter">
+                 <li class="active" data-filter="*"><a href="#">{{ _('All') }}</a></li>
+                    {% for category in portfolio_categories %}
+                        <li data-filter=".{{ category.id }}"><a href="#">{{ category.title }}</a></li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+            <div class="container">
+                <div class="row portfoli_inner pi_3" style="position: relative; height: 1440px;">
+                     {% for portfolio in portfolios %}
+            <div class="col-md-4 col-sm-6 p-0 {{ portfolio.category.id }}" style="position: absolute; left: 950px; top: 960px;">
+                <div class="portfolio_item">
+                    <img width="100%" src="{{ portfolio.image.url }}" alt="">
+                    <div class="portfolio_hover">
+                        <a href="{% url 'portfolio-view' portfolio.id %}">{{ portfolio.title }}</a>
+                        <a href="{% url 'portfolio-view' portfolio.id %}" class="icons"><i class="flaticon-next-1"></i></a>
+                    </div>
+                </div>
+            </div>
+                    {% endfor %}
+        </div>
+            </div>
+
+       </div>
+    </section>
+    <!-- End Portfolio grid Area -->
+{% endblock %}

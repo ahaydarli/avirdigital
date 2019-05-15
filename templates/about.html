@@ -1,0 +1,55 @@
+{% extends 'main.html' %}
+{% block title %} {{ _('About') }} {% endblock %}
+
+{% load static %}
+{% block content %}
+    <!-- Pages Banner Area -->
+    <section class="pages_banner" id="parallax">
+        <img src="{% static 'images/img/bf-3.png' %}" alt="" class="layer layer_1" data-depth="0.10">
+        <img src="{% static 'images/img/bg-2.png' %}" alt="" class="layer layer_2" data-depth="0.35">
+        <div class="container">
+            <img src="{% static 'images/about_us.png' %}" alt="" class="bannar_img wow fadeInRight">
+            <h2 class="wow fadeInUp">{{ _('about_header_title') }}</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.3s">{{ _('about_header_text') }}</p>
+
+        </div>
+    </section>
+     <!-- Countarup Area -->
+    <section class="countarup_area">
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                {% for partner in partners %}
+                    <div class="item">
+                    <div class="countraup_item">
+                        <a href="{% url 'portfolio-view' partner.portfolio.id %}">
+                            <img src="{{ partner.image.url }}" alt="{{ partner.title }}">
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End Countarup Area -->
+
+     <!-- Fantasy Area -->
+     <section class="fantasy_area about_agency_area about_agency_area--left">
+        <div class="round_shap--left"></div>
+        <div class="fantasy_inner">
+            <div class="container">
+                <div class="row ">
+                    {% for item in about_items %}
+                    <div class="col-md-4 wow fadeIn">
+                        <div class="fantasy">
+                            <span class="icons">{{ item.icon |safe}}</span>
+                            <a href="#"><h2>{{ item.title }}</h2></a>
+                            <p>{{ item.text |safe }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+             </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fantasy Area -->
+{% endblock %}

@@ -1,0 +1,104 @@
+{% extends 'main.html' %}
+{% block title %} {{ _('Contact') }} {% endblock %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block content %}
+   <!-- Pages Banner Area -->
+    <section class="pages_banner" id="parallax">
+        <img src="{% static 'images/img/bf-3.png' %}" alt="" class="layer layer_1" data-depth="0.10">
+        <img src="{% static 'images/img/bg-2.png' %}" alt="" class="layer layer_2" data-depth="0.35">
+        <div class="container">
+            <img src="{% static 'images/elaqe-header.png' %}" alt="" class="bannar_img wow fadeInRight">
+            <h2 class="wow fadeInUp">{{ _('contact_header_text') }}</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.3s">{{ _('contact_sub_text') }}</p>
+
+        </div>
+    </section>
+    <!-- End Pages Banner Area -->
+    <!-- Get In Touch With Us Area -->
+    <section class="get_touch_area">
+        <div class="container">
+            <h2>{{ _('Get In Touch With Us') }}</h2>
+            <div class="row">
+                <div class="col-lg-6 map_area">
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Am1yq7iLPZRTcAKSiVEUTAmv04lW9JS_"></iframe>
+                </div>
+                    <div class="col-lg-6">
+                    <form class="from_main" action="" method="post" id="phpcontactform" novalidate="novalidate">
+                                {% csrf_token %}
+                        <div class="form-group">
+                            {{ form.full_name|attr:"class:form-control"}}
+                            <span class="help-block">
+                                {% for error in  form.full_name.errors %}{{ error }}{% endfor %}
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6">
+                                {{ form.email|attr:"class:form-control"}}
+                            <span class="help-block">
+                                {% for error in  form.email.errors %}{{ error }}{% endfor %}
+                            </span>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                {{ form.phone|attr:"class:form-control"}}
+                            <span class="help-block">
+                                {% for error in  form.phone.errors %}{{ error }}{% endfor %}
+                            </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            {{ form.message|attr:"class:form-control"}}
+                            <span class="help-block">
+                                {% for error in  form.message.errors %}{{ error }}{% endfor %}
+                            </span>
+                        </div>
+                        <div class="form-group m-0">
+                            <button class="theme_btn theme_btn--primary" id="js-contact-btn" type="submit">{{ _('Send') }}</button>
+                            <div id="js-contact-result" data-success-msg="Form submitted successfully." data-error-msg="Messages Successfully"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Get In Touch With Us Area -->
+
+    <!--General communication Area -->
+    <section class="general_communication">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <ul class="quick_find">
+                        <li>{{ _('Quick Find Us') }} </li>
+                        <li>{{ _('Email') }}: <a href="#">contact@avirdigital.az</a></li>
+                        <li>(+994 12) 404 12 40 (232) <span>{{ _('Monday–Friday 9am-6pm') }}</span></li>
+                        <li>{{ _('Address') }} <span> {{ _('AZ 1106, M.Araz küç. 50c, Nərimanov ray., Bakı, Azərbaycan') }}</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-8 help_support row">
+                    <div class="col-md-6">
+                       <div class="support">
+                            <h4>{{ _('Help and Support') }}</h4>
+                            <p>support@avirdigital.az</p>
+
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="support">
+                            <h4>{{ _('General communication') }}</h4>
+                            <p>contact@avirdigital.az</p>
+                       </div>
+                    </div>
+
+                    <ul class="socail_icons col-12">
+                        <li><a href="https://www.facebook.com/avirdigital" target="_blank"></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--General communication Area -->
+
+{% endblock %}

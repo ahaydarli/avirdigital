@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block title %} {{ service.title }} {% endblock %}
+{% block content %}
+    <!-- Services Single Area -->
+    <section class="services_single">
+        <div class="container">
+            <h4>{{ service.title }}</h4>
+            <h2>{{ service.sub_title }}</h2>
+            <p class="fast_p">{{ service.description |safe }}</p>
+            <img src="{{ service.image.url }}" alt="">
+            <p class="bg_pera">{{ service.image_description }}</p>
+            <div class="row strategy_inner">
+                {% for subservice in service.sub_service.all %}
+                <div class="col-md-6">
+                    <div class="media">
+                        <div class="icons">{{ subservice.icon |safe }}</div>
+                        <div class="media-body">
+                            <h3>{{ subservice.title }}</h3>
+                            <p>{{ subservice.description |safe }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End Services Single Area -->
+{% endblock %}

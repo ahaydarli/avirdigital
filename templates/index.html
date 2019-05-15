@@ -1,0 +1,233 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+ <!-- Banner Area -->
+    <section class="banner_area" id="parallax">
+        <img src="{% static 'images/img/bf-3.png' %}" alt="" class="layer layer_1" data-depth="0.10">
+        <img src="{% static 'images/img/bg-2.png' %}" alt="" class="layer layer_2" data-depth="0.35">
+        <div class="container">
+            <h2 class="wow fadeInUp">{{ _('index_slider_title') }}</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.3s">{{ _('index_slider_text') }}</p>
+            <a href="{% url 'service-index' %}" class="theme_btn theme_btn--primary wow fadeInUp" data-wow-delay="0.5s">{{ _('SERVICES')|upper }}</a>
+            <a class=" video_btn theme_btn wow fadeInUp" data-wow-delay="0.5s"
+                href="{% url 'portfolio-index' %}">{{ _('PORTFOLIO')|upper }}</a>
+        </div>
+        <img src="{% static 'images/img/planet-background.svg' %}" alt="" class="bannar_img wow fadeInRight">
+        <div class="fadeIn bannar_img-human wow " data-wow-delay="1.5s">
+            <img src="{% static 'images/img/planet-human.svg' %}" alt="" class=" rotate__forward ">
+        </div>
+        <div class="bannar_img-planet wow fadeIn" data-wow-delay="1s">
+            <img src="{% static 'images/img/planets.svg' %}" alt="" class=" rotate__back ">
+        </div>
+    </section>
+    <!-- End Banner Area -->
+<!-- About the Agency Area -->
+    <section class="about_agency_area">
+        <div class="round_shap"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="{%  static 'images/img/about-background-full.svg' %}" alt="">
+                </div>
+                <div class="col-lg-6 agency_contant">
+                    <div class="icons"><i class="far fa-gem"></i></div>
+                    <h4>{{ _('About the Agency') }}</h4>
+                    <h2>{{ _('index_mini_about_title') }}</h2>
+                    <p>{{ _('index_mini_about_text') }}</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End About the Agency Area -->
+    <!-- Fantasy Area -->
+    <section class="fantasy_area about_agency_area about_agency_area--left">
+        <div class="round_shap--left"></div>
+        <div class="fantasy_inner">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xl-4 col-md-12">
+                        <div class="fantasy_tittle">
+                            <h2>{{ _('We Are Fantasy We have got you covered on') }}</h2>
+                            <a href="{% url 'service-index' %}" class="theme_btn theme_btn--primary">{{ _('All Services') }}</a>
+                        </div>
+                    </div>
+                    {% for service in services %}
+                    <div class="col-lg-4 col-md-6 wow fadeIn">
+                        <div class="fantasy">
+                            <span class="icons">{{ service.icon |safe}}</span>
+                            <a href="{% url 'service-view' service.slug %}"><h2>{{ service.title }}</h2></a>
+                            <p>{{ service.short_description |safe }}</p>
+                            <ul class="fantasy_list">
+                                {% for sub_service in service.sub_service.all %}
+                                <li>{{ sub_service.title }}</li>
+                                    {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endfor %}
+             </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fantasy Area -->
+
+    <!-- Countarup Area -->
+    <section class="countarup_area">
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                {% for partner in partners %}
+                    <div class="item">
+                    <div class="countraup_item">
+                        <a href="{% url 'portfolio-view' partner.portfolio.id %}">
+                            <img src="{{ partner.image.url }}" alt="{{ partner.title }}">
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End Countarup Area -->
+
+
+    <!-- Agency Task Area -->
+    <section class="protfolio_area">
+        <div class="container coustom_container">
+            <div class="tittle">
+                <img src="{% static 'images/tree.png' %}" alt="">
+                <h2>{{ _('We have done lot of Agency Task') }}</h2>
+                <a href="{% url 'portfolio-index' %}" class="theme_btn theme_btn--primary theme_btn--extra">{{ _('PORTFOLIO')|upper }}</a>
+            </div>
+            <ul class="protfoli_filter">
+                <li class="active" data-filter="*"><a href="#">{{ _('All Works') }}</a></li>
+                {% for category in portfolio_categories %}
+                    <li data-filter=".{{ category.id }}"><a href="#">{{ category.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row protfoli_inner">
+            {% for portfolio in portfolios %}
+                <div class="col-md-4 col-sm-6 {{ portfolio.category.id }}">
+                <a href="{% url 'portfolio-view' portfolio.id %}" class="work-items"><img src="{{ portfolio.image.url }}" alt=""></a>
+            </div>
+            {% endfor %}
+        </div>
+        </div>
+
+    </section>
+    <!-- End Agency Task Area -->
+
+
+    <!-- Testimonial Area -->
+{#    <section class="testimonial_area ta_2">#}
+{#        <h4>{{ _('Testimonial') }}</h4>#}
+{#        <h2>{{ _('What Our core client say ?') }}</h2>#}
+{#        <div class="carousel slide testimonial_slide carousel-fade" data-ride="carousel">#}
+{#            <div class="carousel-inner">#}
+{#                <div class="carousel-item active">#}
+{#                    <div class="testimonial_content">#}
+{#                        <p>Our approach has empowered local, national, and global brands to grow their businesses and#}
+{#                            achieve a competitive advantage and we can do the same for you.</p>#}
+{#                        <div class="media">#}
+{#                            <img src="{% static 'images/testimonial-1.jpg' %}" alt="">#}
+{#                            <div class="media-body">#}
+{#                                <a href="#">Emran Khan</a>#}
+{#                                <h6>Frontend Developer</h6>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="carousel-item">#}
+{#                    <div class="testimonial_content">#}
+{#                        <p>Every product must make a statement and we’re ready to create it with holistic approach to#}
+{#                            design. create it with holistic approach to design.</p>#}
+{#                        <div class="media">#}
+{#                            <img src="{% static 'images/testimonial-3.jpg' %}" alt="">#}
+{#                            <div class="media-body">#}
+{#                                <a href="#">Jesi Azaira</a>#}
+{#                                <h6>Creative Web Solution</h6>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="carousel-item">#}
+{#                    <div class="testimonial_content">#}
+{#                        <p>We translate your business goals and objectives into insightful UX, remarkable UI and#}
+{#                            distinctive competitive advantage and we can do the same for you.</p>#}
+{#                        <div class="media">#}
+{#                            <img src="{% static 'images/testimonial-4.jpg' %}" alt="">#}
+{#                            <div class="media-body">#}
+{#                                <a href="#">Mahfuz Riad</a>#}
+{#                                <h6>Ui Designer &amp; CEO</h6>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="carousel-item">#}
+{#                    <div class="testimonial_content">#}
+{#                        <p>Business Analysis is the practice of enabling change in an organizational context, by#}
+{#                            defining needs enabling change in an organizational context, by defining needs</p>#}
+{#                        <div class="media">#}
+{#                            <img src="{% static 'images/testimonial-5.jpg' %}" alt="">#}
+{#                            <div class="media-body">#}
+{#                                <a href="#">Mahfuz Riad</a>#}
+{#                                <h6>Ui Designer &amp; CEO</h6>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#            <div class="nav_control text-center">#}
+{#                <a class="control-prev" href="" role="button" data-slide="prev">#}
+{#                    <i class="flaticon-back"></i>#}
+{#                </a>#}
+{#                <a class="control-next text-left" href="" role="button" data-slide="next">#}
+{#                    <i class="flaticon-next"></i>#}
+{#                </a>#}
+{#            </div>#}
+{#        </div>#}
+{#        <ul class="indicators">#}
+{#            <li data-target=".testimonial_slide" data-slide-to="0" class="testimonial_1"><img#}
+{#                    src="{% static 'images/testimonial-2.jpg' %}" alt=""></li>#}
+{#            <li data-target=".testimonial_slide" data-slide-to="1" class="testimonial_2"><img#}
+{#                    src="{% static 'images/testimonial-3.jpg' %}" alt=""></li>#}
+{#            <li data-target=".testimonial_slide" data-slide-to="2" class="testimonial_3"><img#}
+{#                    src="{% static 'images/testimonial-4.jpg' %}" alt=""></li>#}
+{#            <li data-target=".testimonial_slide" data-slide-to="2" class="testimonial_4"><img#}
+{#                    src="{% static 'images/testimonial-5.jpg' %}" alt=""></li>#}
+{#            <li class="round_shap"></li>#}
+{#        </ul>#}
+{#    </section>#}
+    <!-- End Testimonial Area -->
+
+
+
+    <!-- Our blog posts Area -->
+    <section class="blog_posts_area">
+        <h2>{{ _('Our Blog Posts') }}</h2>
+    <div class="container">
+        <div class="row blog_inner">
+       {% for blog in blogs %}
+                <div class="col-lg-4 col-md-6">
+                <div class="blog_item">
+                    <a href="{% url 'blog-view' blog.id %}" class="blog_img">
+                        <img src="{{ blog.image.url }}" alt="">
+                        <span>{{ blog.created_at |date:'d' }} <small>{{ blog.created_at |date:'M' }}</small></span>
+                    </a>
+                    <div class="blog_contant" style="height: 203px">
+                        <a href="{% url 'blog-view' blog.id %}">{{ blog.title }}</a>
+                        <p>{{ blog.text |truncatechars:80 |safe }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    </section>
+    <!-- End Our blog posts Area -->
+
+{% endblock %}

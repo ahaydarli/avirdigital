@@ -1,0 +1,50 @@
+{% extends 'main.html' %}
+{% block content %}
+     <!-- Blog Single Area -->
+    <section class="blog_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 blog_leftsidebar">
+                    <!-- Blog List -->
+                    <div class="blog_single">
+                        <img src="{{ blog.image.url }}" alt="">
+                        <ul class="blog_info">
+                            <li class="date"><span>{{ blog.created_at |date:'d' }} <small>{{ blog.created_at |date:'F' }}</small></span></li>
+                            <li><a href="#"><i class="fas fa-user"></i>{{ blog.author.username }}</a></li>
+                            <li><a href="#"><i class="fas fa-tag"></i>{{ blog.category.title }}</a></li>
+                        </ul>
+                        <h2>{{ blog.title }}</h2>
+                        {{ blog.text |safe }}
+                      <div class="share_row">
+                            <ul class="share">
+                                <li>{{ _('Share') }} </li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="pinterest"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+{#                        <div class="np_btn">#}
+{#                            <a href="#" class="theme_btn"><i class="fas fa-arrow-left"></i>Previous</a>#}
+{#                            <a href="#" class="theme_btn tb_2">Next Post<i class="fas fa-arrow-right"></i></a>#}
+{#                        </div>#}
+
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="blog_rightsidebar col-lg-3">
+                    <div class="categories">
+                        <h3>{{ _('Blog Categories') }}</h3>
+                        <ul class="categories_list">
+                            {% for category in blog_categories %}
+                                 <li><a href="#">{{ category.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Blog Single Area -->
+{% endblock %}

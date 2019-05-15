@@ -1,0 +1,361 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-18 13:47+0000\n"
+"PO-Revision-Date: 2019-04-19 12:48+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.2\n"
+
+#: about/models.py:20
+msgid "about item"
+msgstr ""
+
+#: about/models.py:21
+msgid "about items"
+msgstr ""
+
+#: avirdigital/forms.py:5 templates/services/index.html:63
+msgid "Full Name"
+msgstr "Full Name"
+
+#: avirdigital/forms.py:6 templates/contact.html:75
+#: templates/services/index.html:80
+msgid "Email"
+msgstr "Email"
+
+#: avirdigital/forms.py:7 templates/services/index.html:74
+msgid "Phone"
+msgstr "Phone number"
+
+#: avirdigital/forms.py:10 avirdigital/forms.py:11
+msgid "Your Message"
+msgstr "How can we help you? Please, write a message in this section..."
+
+#: blog/models.py:25
+msgid "blog category"
+msgstr ""
+
+#: blog/models.py:26
+msgid "blog categories"
+msgstr "Blog categories"
+
+#: blog/models.py:54
+msgid "blog"
+msgstr ""
+
+#: blog/models.py:55
+msgid "blogs"
+msgstr ""
+
+#: page/models.py:28
+msgid "page"
+msgstr ""
+
+#: page/models.py:29
+msgid "pages"
+msgstr ""
+
+#: portfolio/models.py:29
+msgid "portfolio category"
+msgstr ""
+
+#: portfolio/models.py:30
+msgid "portfolio categories"
+msgstr ""
+
+#: portfolio/models.py:53 services/models.py:43
+msgid "Display at home"
+msgstr ""
+
+#: portfolio/models.py:65
+msgid "portfolio"
+msgstr ""
+
+#: portfolio/models.py:66
+msgid "portfolios"
+msgstr ""
+
+#: services/models.py:24
+msgid "sub service"
+msgstr ""
+
+#: services/models.py:25
+msgid "sub services"
+msgstr ""
+
+#: services/models.py:55
+msgid "service"
+msgstr ""
+
+#: services/models.py:56
+msgid "services"
+msgstr ""
+
+#: templates/about.html:2 templates/main.html:72 templates/main.html:132
+msgid "About"
+msgstr "About us"
+
+#: templates/about.html:12
+msgid "about_header_title"
+msgstr "We use the latest updates in all our work"
+
+#: templates/about.html:13
+msgid "about_header_text"
+msgstr ""
+"We are realizing your projects by using programming languages, marketing "
+"tools, and technologies that are well-known and updated"
+
+#: templates/blog/index.html:2 templates/main.html:80
+msgid "Blog"
+msgstr "Blog"
+
+#: templates/blog/index.html:12
+msgid "Blog text"
+msgstr "Recent news in the digital world"
+
+#: templates/blog/index.html:13
+msgid "Blog sub text"
+msgstr ""
+"You can get learn the latest innovations in the digital world and in "
+"Azerbaijan via our blog"
+
+#: templates/blog/index.html:34
+msgid "Read more"
+msgstr "Read more"
+
+#: templates/blog/index.html:49 templates/blog/view.html:38
+msgid "Blog Categories"
+msgstr "Blog Categories"
+
+#: templates/blog/view.html:20
+msgid "Share"
+msgstr "Share"
+
+#: templates/contact.html:2 templates/main.html:82 templates/main.html:135
+msgid "Contact"
+msgstr "Contact"
+
+#: templates/contact.html:13
+msgid "contact_header_text"
+msgstr "24/7 service"
+
+#: templates/contact.html:14
+msgid "contact_sub_text"
+msgstr ""
+"We would be appreciated to see you at our office and listen to your projects"
+
+#: templates/contact.html:23
+msgid "Get In Touch With Us"
+msgstr "Contact us"
+
+#: templates/contact.html:58 templates/services/index.html:91
+msgid "Send"
+msgstr "Send"
+
+#: templates/contact.html:74
+msgid "Quick Find Us"
+msgstr "Quick Find Us"
+
+#: templates/contact.html:76
+msgid "Monday–Friday 9am-6pm"
+msgstr "Monday–Friday 9am-6pm"
+
+#: templates/contact.html:77
+msgid "Address"
+msgstr "Address"
+
+#: templates/contact.html:77 templates/main.html:141
+msgid "AZ 1106, M.Araz küç. 50c, Nərimanov ray., Bakı, Azərbaycan"
+msgstr "AZ 1106, 50c M.Araz str., Narimanov dist, Baku, Azerbaijan."
+
+#: templates/contact.html:83
+msgid "Help and Support"
+msgstr "Help and Support"
+
+#: templates/contact.html:90
+msgid "General communication"
+msgstr "General communication"
+
+#: templates/index.html:9
+msgid "index_slider_title"
+msgstr "We offer the range of digital services"
+
+#: templates/index.html:10
+msgid "index_slider_text"
+msgstr "We'll be glad to introduce you to SEO, SMM, Advertising, and others."
+
+#: templates/index.html:11
+msgid "SERVICES"
+msgstr "SERVICES"
+
+#: templates/index.html:13 templates/index.html:100
+msgid "PORTFOLIO"
+msgstr "PORTFOLIO"
+
+#: templates/index.html:34
+msgid "About the Agency"
+msgstr "Why AVIRDIGITAL?"
+
+#: templates/index.html:35
+msgid "index_mini_about_title"
+msgstr "Professional and Creative team"
+
+#: templates/index.html:36
+msgid "index_mini_about_text"
+msgstr ""
+"Our main goal is to contribute your projects with our great experience which"
+" we gained in the past and continuing works"
+
+#: templates/index.html:51
+msgid "We Are Fantasy We have got you covered on"
+msgstr "Our services for you"
+
+#: templates/index.html:52
+msgid "All Services"
+msgstr "SERVICES"
+
+#: templates/index.html:99
+msgid "We have done lot of Agency Task"
+msgstr "Samples from our value-added works"
+
+#: templates/index.html:103
+msgid "All Works"
+msgstr "Favorites"
+
+#: templates/index.html:210
+msgid "Our Blog Posts"
+msgstr "Favorite blogs"
+
+#: templates/main.html:70
+msgid "Home"
+msgstr "Home"
+
+#: templates/main.html:74 templates/main.html:134
+#: templates/portfolio/index.html:2
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: templates/main.html:77 templates/main.html:133
+#: templates/services/index.html:2
+msgid "Services"
+msgstr "Services"
+
+#: templates/main.html:130
+msgid "Links"
+msgstr "Main sections"
+
+#: templates/main.html:139
+msgid "Information"
+msgstr "Information"
+
+#: templates/main.html:143
+msgid "(+994 12) 404 1240 (232)"
+msgstr ""
+"(+994 12) 404 1240\n"
+" (Internal number:232)"
+
+#: templates/main.html:147
+msgid "Stay in Loop"
+msgstr "Subscribe the news"
+
+#: templates/main.html:148
+msgid ""
+"Subscribe to receive biweekly tips on creative automation and digital "
+"advertising!"
+msgstr "You can get enough information with updated news by subscribing  "
+
+#: templates/main.html:150
+msgid "What’s Your email"
+msgstr "Your email..."
+
+#: templates/main.html:158
+msgid "All rights reserved"
+msgstr "All rights reserved"
+
+#: templates/main.html:159
+msgid "Privacy policy"
+msgstr "Privacy policy"
+
+#: templates/portfolio/index.html:12
+msgid "portfolio_header_text"
+msgstr "We prepare your works with great enthusiasm"
+
+#: templates/portfolio/index.html:13
+msgid "portfolio_sub_text"
+msgstr "You can look at our works below"
+
+#: templates/portfolio/index.html:23
+msgid "Awesome Portfolio"
+msgstr "Portfolio"
+
+#: templates/portfolio/index.html:24
+msgid "Success Stories See How We Helped Our Clients"
+msgstr "Some of the samples which demonstrate our support to customer"
+
+#: templates/portfolio/index.html:26
+msgid "All"
+msgstr ""
+
+#: templates/portfolio/view.html:13
+msgid "Client"
+msgstr "Customer"
+
+#: templates/portfolio/view.html:14
+msgid "Date"
+msgstr "Date"
+
+#: templates/portfolio/view.html:15
+msgid "Live demo"
+msgstr "Go to site"
+
+#: templates/portfolio/view.html:23
+msgid "ABOUT THE PROJECT"
+msgstr "The brief information about what we have already done on the project"
+
+#: templates/services/index.html:12
+msgid "service_header_text"
+msgstr "Some of what we are able to do for you"
+
+#: templates/services/index.html:13
+msgid "service_sub_text"
+msgstr "We are ready to realize your dreams with our professional team"
+
+#: templates/services/index.html:40
+msgid "Think we're the agency for you?"
+msgstr "Do you have any project to realize?"
+
+#: templates/services/index.html:41
+msgid "Then get in touch. We'd love to hear from you."
+msgstr "Fill the blanks in the following series to send us a message"
+
+#: templates/services/index.html:58
+msgid "Budget"
+msgstr "Budget"
+
+#: templates/services/index.html:69
+msgid "Position"
+msgstr "Tasks of the responsible person on the project"
+
+#: templates/services/index.html:86
+msgid "Short Description"
+msgstr ""
+"Brief information about the project (aims, expectations, tasks and so on )"
+
+#~ msgid "Language"
+#~ msgstr "Language"
+
+#~ msgid "Welcome to my site."
+#~ msgstr "Avirdigital index en"

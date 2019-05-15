@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-18 13:47+0000\n"
+"PO-Revision-Date: 2019-04-18 11:29+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.2\n"
+
+#: about/models.py:20
+msgid "about item"
+msgstr ""
+
+#: about/models.py:21
+msgid "about items"
+msgstr ""
+
+#: avirdigital/forms.py:5 templates/services/index.html:63
+msgid "Full Name"
+msgstr "Имя  Фамилия"
+
+#: avirdigital/forms.py:6 templates/contact.html:75
+#: templates/services/index.html:80
+msgid "Email"
+msgstr "Электронная почта"
+
+#: avirdigital/forms.py:7 templates/services/index.html:74
+msgid "Phone"
+msgstr "Номер телефона"
+
+#: avirdigital/forms.py:10 avirdigital/forms.py:11
+msgid "Your Message"
+msgstr "Как мы можем вам помочь? Пожалуйста, напишите здесь ..."
+
+#: blog/models.py:25
+msgid "blog category"
+msgstr ""
+
+#: blog/models.py:26
+msgid "blog categories"
+msgstr "Категории блогов"
+
+#: blog/models.py:54
+msgid "blog"
+msgstr ""
+
+#: blog/models.py:55
+msgid "blogs"
+msgstr ""
+
+#: page/models.py:28
+msgid "page"
+msgstr ""
+
+#: page/models.py:29
+msgid "pages"
+msgstr ""
+
+#: portfolio/models.py:29
+msgid "portfolio category"
+msgstr ""
+
+#: portfolio/models.py:30
+msgid "portfolio categories"
+msgstr ""
+
+#: portfolio/models.py:53 services/models.py:43
+msgid "Display at home"
+msgstr ""
+
+#: portfolio/models.py:65
+msgid "portfolio"
+msgstr ""
+
+#: portfolio/models.py:66
+msgid "portfolios"
+msgstr ""
+
+#: services/models.py:24
+msgid "sub service"
+msgstr ""
+
+#: services/models.py:25
+msgid "sub services"
+msgstr ""
+
+#: services/models.py:55
+msgid "service"
+msgstr ""
+
+#: services/models.py:56
+msgid "services"
+msgstr ""
+
+#: templates/about.html:2 templates/main.html:72 templates/main.html:132
+msgid "About"
+msgstr "О нас"
+
+#: templates/about.html:12
+msgid "about_header_title"
+msgstr "Мы применяем самые последние инновации во всей нашей работе."
+
+#: templates/about.html:13
+msgid "about_header_text"
+msgstr ""
+"Внедряя популярные и современные языки программирования, маркетинговые "
+"инструменты и технологии, мы реализуем ваши проекты."
+
+#: templates/blog/index.html:2 templates/main.html:80
+msgid "Blog"
+msgstr "Блог"
+
+#: templates/blog/index.html:12
+msgid "Blog text"
+msgstr "Последние новости в цифровом мире."
+
+#: templates/blog/index.html:13
+msgid "Blog sub text"
+msgstr ""
+"Вы можете прочитать последние новости в цифровом мире в нашем блоге что "
+"происходит в мире и в Азербайджане."
+
+#: templates/blog/index.html:34
+msgid "Read more"
+msgstr "читать далее"
+
+#: templates/blog/index.html:49 templates/blog/view.html:38
+msgid "Blog Categories"
+msgstr "Категории блогов"
+
+#: templates/blog/view.html:20
+msgid "Share"
+msgstr "Поделиться"
+
+#: templates/contact.html:2 templates/main.html:82 templates/main.html:135
+msgid "Contact"
+msgstr "Контакт"
+
+#: templates/contact.html:13
+msgid "contact_header_text"
+msgstr "24 часа в вашем обслуживании"
+
+#: templates/contact.html:14
+msgid "contact_sub_text"
+msgstr "Мы будем рады видеть вас в нашем офисе и слушать ваши проекты"
+
+#: templates/contact.html:23
+msgid "Get In Touch With Us"
+msgstr "Свяжитесь с нами"
+
+#: templates/contact.html:58 templates/services/index.html:91
+msgid "Send"
+msgstr "Отправить"
+
+#: templates/contact.html:74
+msgid "Quick Find Us"
+msgstr "Контакт"
+
+#: templates/contact.html:76
+msgid "Monday–Friday 9am-6pm"
+msgstr "Понедельник-пятница 9 утра до 6 вечера"
+
+#: templates/contact.html:77
+msgid "Address"
+msgstr "Адрес"
+
+#: templates/contact.html:77 templates/main.html:141
+msgid "AZ 1106, M.Araz küç. 50c, Nərimanov ray., Bakı, Azərbaycan"
+msgstr "АЗ 1106, ул. М.Араз 50с, Наримановский р-н., Баку, Азербайджан"
+
+#: templates/contact.html:83
+msgid "Help and Support"
+msgstr "Помощь и поддержка"
+
+#: templates/contact.html:90
+msgid "General communication"
+msgstr "Общие связи"
+
+#: templates/index.html:9
+msgid "index_slider_title"
+msgstr "Мы предлагаем полный спектр цифровых услуг."
+
+#: templates/index.html:10
+msgid "index_slider_text"
+msgstr ""
+"Мы будем рады помочь вам создание веб-сайтов, SEO, SMM, и больше услуг."
+
+#: templates/index.html:11
+msgid "SERVICES"
+msgstr "СЕРВИСЫ"
+
+#: templates/index.html:13 templates/index.html:100
+msgid "PORTFOLIO"
+msgstr "ПОРТФОЛИО"
+
+#: templates/index.html:34
+msgid "About the Agency"
+msgstr "Почему AVIRDIGITAL?"
+
+#: templates/index.html:35
+msgid "index_mini_about_title"
+msgstr "Профессиональная и творческая команда"
+
+#: templates/index.html:36
+msgid "index_mini_about_text"
+msgstr ""
+"Наша цель - внести свой вклад в ваши проекты, используя опыт, накопленный "
+"нами в прошлом и настоящем проектах, которые мы обслуживали."
+
+#: templates/index.html:51
+msgid "We Are Fantasy We have got you covered on"
+msgstr "Услуги для вас"
+
+#: templates/index.html:52
+msgid "All Services"
+msgstr "СЕРВИСЫ"
+
+#: templates/index.html:99
+msgid "We have done lot of Agency Task"
+msgstr "Образцы добавленной стоимости работ"
+
+#: templates/index.html:103
+msgid "All Works"
+msgstr "Избранные"
+
+#: templates/index.html:210
+msgid "Our Blog Posts"
+msgstr "Избранные блоги"
+
+#: templates/main.html:70
+msgid "Home"
+msgstr "Главная"
+
+#: templates/main.html:74 templates/main.html:134
+#: templates/portfolio/index.html:2
+msgid "Portfolio"
+msgstr "Портфолио"
+
+#: templates/main.html:77 templates/main.html:133
+#: templates/services/index.html:2
+msgid "Services"
+msgstr "Сервисы"
+
+#: templates/main.html:130
+msgid "Links"
+msgstr "Ссылки"
+
+#: templates/main.html:139
+msgid "Information"
+msgstr "Контакт"
+
+#: templates/main.html:143
+msgid "(+994 12) 404 1240 (232)"
+msgstr ""
+
+#: templates/main.html:147
+msgid "Stay in Loop"
+msgstr "Подписаться на новости"
+
+#: templates/main.html:148
+msgid ""
+"Subscribe to receive biweekly tips on creative automation and digital "
+"advertising!"
+msgstr ""
+"Вы можете узнать больше о наших услугах, подписываясь на наши обновленные "
+"новости каждый день."
+
+#: templates/main.html:150
+msgid "What’s Your email"
+msgstr "Электронная почта ..."
+
+#: templates/main.html:158
+msgid "All rights reserved"
+msgstr "Все права защищены."
+
+#: templates/main.html:159
+msgid "Privacy policy"
+msgstr "Политика конфиденциальности"
+
+#: templates/portfolio/index.html:12
+msgid "portfolio_header_text"
+msgstr "Мы готовим ваши желания с любовью."
+
+#: templates/portfolio/index.html:13
+msgid "portfolio_sub_text"
+msgstr "Смотрите ниже для нашей работы."
+
+#: templates/portfolio/index.html:23
+msgid "Awesome Portfolio"
+msgstr "Портфолио"
+
+#: templates/portfolio/index.html:24
+msgid "Success Stories See How We Helped Our Clients"
+msgstr "Истории успеха видят, как мы помогали нашим клиентам"
+
+#: templates/portfolio/index.html:26
+msgid "All"
+msgstr ""
+
+#: templates/portfolio/view.html:13
+msgid "Client"
+msgstr "Клиент"
+
+#: templates/portfolio/view.html:14
+msgid "Date"
+msgstr "Дата"
+
+#: templates/portfolio/view.html:15
+msgid "Live demo"
+msgstr "Ссылка на сайт"
+
+#: templates/portfolio/view.html:23
+msgid "ABOUT THE PROJECT"
+msgstr "Краткая информация о проделанной работе над проектом"
+
+#: templates/services/index.html:12
+msgid "service_header_text"
+msgstr "Некоторые из работ, которые мы можем сделать для вас"
+
+#: templates/services/index.html:13
+msgid "service_sub_text"
+msgstr ""
+"Основываясь на опыте нашей профессиональной команды, мы всегда готовы "
+"выполнить ваши пожелания"
+
+#: templates/services/index.html:40
+msgid "Think we're the agency for you?"
+msgstr "Вы хотите реализовать свой проект?"
+
+#: templates/services/index.html:41
+msgid "Then get in touch. We'd love to hear from you."
+msgstr "Вы можете связаться с нами, заполнив следующие разделы"
+
+#: templates/services/index.html:58
+msgid "Budget"
+msgstr "Бюджет"
+
+#: templates/services/index.html:69
+msgid "Position"
+msgstr "Задача ответственного лица в проекте"
+
+#: templates/services/index.html:86
+msgid "Short Description"
+msgstr "Краткая информация о проекте (цель, ожидание и т. Д.)"

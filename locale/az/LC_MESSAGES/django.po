@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-18 13:47+0000\n"
+"PO-Revision-Date: 2019-04-19 12:59+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.2\n"
+
+#: about/models.py:20
+msgid "about item"
+msgstr "about item"
+
+#: about/models.py:21
+msgid "about items"
+msgstr ""
+
+#: avirdigital/forms.py:5 templates/services/index.html:63
+msgid "Full Name"
+msgstr "Ad Soyad"
+
+#: avirdigital/forms.py:6 templates/contact.html:75
+#: templates/services/index.html:80
+msgid "Email"
+msgstr "E-poçt"
+
+#: avirdigital/forms.py:7 templates/services/index.html:74
+msgid "Phone"
+msgstr "Telefon nömrəsi"
+
+#: avirdigital/forms.py:10 avirdigital/forms.py:11
+msgid "Your Message"
+msgstr "Sizə necə kömək edə bilərik? Zəhmət olmasa buraya yazın..."
+
+#: blog/models.py:25
+msgid "blog category"
+msgstr ""
+
+#: blog/models.py:26
+msgid "blog categories"
+msgstr "Bloq Kateqoriyaları"
+
+#: blog/models.py:54
+msgid "blog"
+msgstr ""
+
+#: blog/models.py:55
+msgid "blogs"
+msgstr ""
+
+#: page/models.py:28
+msgid "page"
+msgstr ""
+
+#: page/models.py:29
+msgid "pages"
+msgstr ""
+
+#: portfolio/models.py:29
+msgid "portfolio category"
+msgstr ""
+
+#: portfolio/models.py:30
+msgid "portfolio categories"
+msgstr ""
+
+#: portfolio/models.py:53 services/models.py:43
+msgid "Display at home"
+msgstr ""
+
+#: portfolio/models.py:65
+msgid "portfolio"
+msgstr ""
+
+#: portfolio/models.py:66
+msgid "portfolios"
+msgstr "portfolio"
+
+#: services/models.py:24
+msgid "sub service"
+msgstr ""
+
+#: services/models.py:25
+msgid "sub services"
+msgstr ""
+
+#: services/models.py:55
+msgid "service"
+msgstr ""
+
+#: services/models.py:56
+msgid "services"
+msgstr ""
+
+#: templates/about.html:2 templates/main.html:72 templates/main.html:132
+msgid "About"
+msgstr "Haqqımızda"
+
+#: templates/about.html:12
+msgid "about_header_title"
+msgstr "Biz bütün işlərimizdə ən son yenilikləri tətbiq edirik"
+
+#: templates/about.html:13
+msgid "about_header_text"
+msgstr ""
+"Tanınmış və ən son trenddə olan proqramlaşdırma dilləri, marketing alətləri,"
+" texnologiyalar tətbiq edərək sizin layihələrinizi həyata keçiririk"
+
+#: templates/blog/index.html:2 templates/main.html:80
+msgid "Blog"
+msgstr "Bloq"
+
+#: templates/blog/index.html:12
+msgid "Blog text"
+msgstr "Rəqəmsal dünyada olan ən son yeniliklər"
+
+#: templates/blog/index.html:13
+msgid "Blog sub text"
+msgstr ""
+"Dünyada və Azərbaycanda rəqəmsal aləmdə baş verən ən son yeniliklərlə "
+"bloqumuzda tanış ola bilərsiniz"
+
+#: templates/blog/index.html:34
+msgid "Read more"
+msgstr "Davamını Oxu"
+
+#: templates/blog/index.html:49 templates/blog/view.html:38
+msgid "Blog Categories"
+msgstr "Bloq Kateqoriyaları"
+
+#: templates/blog/view.html:20
+msgid "Share"
+msgstr "Paylaş"
+
+#: templates/contact.html:2 templates/main.html:82 templates/main.html:135
+msgid "Contact"
+msgstr "Əlaqə"
+
+#: templates/contact.html:13
+msgid "contact_header_text"
+msgstr "24 saat sizin xidmətinizdə"
+
+#: templates/contact.html:14
+msgid "contact_sub_text"
+msgstr ""
+"Sizi ofisimizdə görməkdən və layihələrinizi dinləməkdən                   "
+"məmnun olarıq."
+
+#: templates/contact.html:23
+msgid "Get In Touch With Us"
+msgstr "Bizimlə əlaqə"
+
+#: templates/contact.html:58 templates/services/index.html:91
+msgid "Send"
+msgstr "Göndər"
+
+#: templates/contact.html:74
+msgid "Quick Find Us"
+msgstr "Əlaqə"
+
+#: templates/contact.html:76
+msgid "Monday–Friday 9am-6pm"
+msgstr "Bazar ertəsi - Cümə 09:00-18:00"
+
+#: templates/contact.html:77
+msgid "Address"
+msgstr "Ünvan"
+
+#: templates/contact.html:77 templates/main.html:141
+msgid "AZ 1106, M.Araz küç. 50c, Nərimanov ray., Bakı, Azərbaycan"
+msgstr "AZ 1106, M.Araz küç. 50c, Nərimanov ray., Bakı, Azərbaycan"
+
+#: templates/contact.html:83
+msgid "Help and Support"
+msgstr "Texniki dəstək"
+
+#: templates/contact.html:90
+msgid "General communication"
+msgstr "Ümumi Əlaqə"
+
+#: templates/index.html:9
+msgid "index_slider_title"
+msgstr "Tam spektr rəqəmsal xidmətlər təqdim edirik."
+
+#: templates/index.html:10
+msgid "index_slider_text"
+msgstr ""
+"SEO, SMM, Reklam və daha çox xidmətləri sizə təqdim etməkdən məmnun olarıq."
+
+#: templates/index.html:11
+msgid "SERVICES"
+msgstr "XİDMƏTLƏR"
+
+#: templates/index.html:13 templates/index.html:100
+msgid "PORTFOLIO"
+msgstr "PORTFOLİO"
+
+#: templates/index.html:34
+msgid "About the Agency"
+msgstr "Niyə AVIRDIGITAL?"
+
+#: templates/index.html:35
+msgid "index_mini_about_title"
+msgstr "Peşəkar və Kreativ komanda "
+
+#: templates/index.html:36
+msgid "index_mini_about_text"
+msgstr ""
+"İndiyədək  xidmət göstərdiyimiz və hal-hazırda fəaliyyət göstərən "
+"lahiyələrdə qazandığımız təcrübə ilə sizində layihələrinizidə  tam əminliklə"
+" icra edərək dəyər qatmaq bizim məqsədimizdir..."
+
+#: templates/index.html:51
+msgid "We Are Fantasy We have got you covered on"
+msgstr "Sizin üçün xidmətlərimiz"
+
+#: templates/index.html:52
+msgid "All Services"
+msgstr "XİDMƏTLƏR"
+
+#: templates/index.html:99
+msgid "We have done lot of Agency Task"
+msgstr "Dəyər qatdığımız işlərdən nümunələr"
+
+#: templates/index.html:103
+msgid "All Works"
+msgstr "Seçilmişlər"
+
+#: templates/index.html:210
+msgid "Our Blog Posts"
+msgstr "Seçilmiş yazılar"
+
+#: templates/main.html:70
+msgid "Home"
+msgstr "Baş səhifə"
+
+#: templates/main.html:74 templates/main.html:134
+#: templates/portfolio/index.html:2
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: templates/main.html:77 templates/main.html:133
+#: templates/services/index.html:2
+msgid "Services"
+msgstr "Xidmətlər"
+
+#: templates/main.html:130
+msgid "Links"
+msgstr "Əsas bölmələr"
+
+#: templates/main.html:139
+msgid "Information"
+msgstr "Əlaqə"
+
+#: templates/main.html:143
+msgid "(+994 12) 404 1240 (232)"
+msgstr "(+994 12) 404 1240 (daxili nömrə:232)"
+
+#: templates/main.html:147
+msgid "Stay in Loop"
+msgstr "Yeniliklərə abunə olun"
+
+#: templates/main.html:148
+msgid ""
+"Subscribe to receive biweekly tips on creative automation and digital "
+"advertising!"
+msgstr ""
+"Hər gün yenilənən xəbərlərimizə abunə\n"
+"olaraq siz xidmətlərimiz haqqında daha ətraflı\n"
+"məlumata sahib ola bilərsiniz."
+
+#: templates/main.html:150
+msgid "What’s Your email"
+msgstr "E-poçtunuz..."
+
+#: templates/main.html:158
+msgid "All rights reserved"
+msgstr "Bütün hüquqlar qorunur"
+
+#: templates/main.html:159
+msgid "Privacy policy"
+msgstr "Məxfilik Siyasəti"
+
+#: templates/portfolio/index.html:12
+msgid "portfolio_header_text"
+msgstr "Sizin istəklərinizi sevgi ilə hazırlayırıq."
+
+#: templates/portfolio/index.html:13
+msgid "portfolio_sub_text"
+msgstr "İşlərimizlə aşağıda tanış ola bilərsiniz."
+
+#: templates/portfolio/index.html:23
+msgid "Awesome Portfolio"
+msgstr "Portfolio"
+
+#: templates/portfolio/index.html:24
+msgid "Success Stories See How We Helped Our Clients"
+msgstr ""
+"Bizim müştərilərimizə necə kömək etdiyimizi göstərən layihələrdən bəziləri"
+
+#: templates/portfolio/index.html:26
+msgid "All"
+msgstr ""
+
+#: templates/portfolio/view.html:13
+msgid "Client"
+msgstr "Sifarişçi"
+
+#: templates/portfolio/view.html:14
+msgid "Date"
+msgstr "Tarix"
+
+#: templates/portfolio/view.html:15
+msgid "Live demo"
+msgstr "Sayta keçid"
+
+#: templates/portfolio/view.html:23
+msgid "ABOUT THE PROJECT"
+msgstr "Layihədə edilən işlər haqqında qısa məlumat"
+
+#: templates/services/index.html:12
+msgid "service_header_text"
+msgstr "Sizin üçün edə biləcəklərimizdən bəziləri"
+
+#: templates/services/index.html:13
+msgid "service_sub_text"
+msgstr ""
+"Peşəkar komandamızın təcrübəsinə dayanaraq hər zaman sizin arzularınızı "
+"reallaşdırmağa hazırıq"
+
+#: templates/services/index.html:40
+msgid "Think we're the agency for you?"
+msgstr "Həyata keçirmək istədiyiniz layihəniz var?"
+
+#: templates/services/index.html:41
+msgid "Then get in touch. We'd love to hear from you."
+msgstr "Aşağıdakı bölmələri dolduraraq bizə müraciət edə bilərsiniz"
+
+#: templates/services/index.html:58
+msgid "Budget"
+msgstr "Büdcəsi "
+
+#: templates/services/index.html:69
+msgid "Position"
+msgstr "Məsul şəxsin layihədə vəzifəsi"
+
+#: templates/services/index.html:86
+msgid "Short Description"
+msgstr ""
+"Layihə haqqında qısa məlumat (məqsədi, bizdən gözləntiniz, görülməli işlər "
+"və sairə)"
+
+#~ msgid "Language"
+#~ msgstr "Dil"
+
+#~ msgid "First name"
+#~ msgstr "Ad"
+
+#~ msgid "Last name"
+#~ msgstr "Soyad"
+
+#~ msgid "Email address"
+#~ msgstr "E-poçt ünvanı"
+
+#~ msgid "Categories"
+#~ msgstr "Görülən işlər"
+
+#~ msgid "Agency Task Complete"
+#~ msgstr "tamamlanmış layihə"
+
+#~ msgid "Welcome to my site."
+#~ msgstr "Avirdigital index Az"
