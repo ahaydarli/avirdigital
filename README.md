@@ -3,13 +3,22 @@ Avirdigital website
 
 Clone project 
 
-create virtual environment
-virtualenv -p python3 envname
+_cd avirdigital_
+
+Create virtual environment 
+
+_virtualenv -p python3 envname_
 
 Activate virtual environment
-source ./envname/bin activate
 
-pip install -r requirements.txt
-python manage.py runserver
+_source ./envname/bin activate_
+
+_pip install -r requirements.txt_
+
+_python manage.py makemigrations_ 
+
+_python manage.py migrate_
+
+_python manage.py runserver_
 
 
