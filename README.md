@@ -33,7 +33,7 @@
 ## About
 
 <p align="center">
-  <img src="static/images/screenshot.png" alt="Logo">
+  <img src="static/images/screenshot.png" width="500" alt="Logo">
 </p>
 
 ### Built With
