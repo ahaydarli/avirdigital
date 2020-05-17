@@ -63,10 +63,19 @@ project locally.
 - To run on local
     ```bash
     pipenv shell
+    python manage.py migrate
     python manage.py runserver
     ```
 
     Application will run on [127.0.0.1:8000](http://127.0.0.1:8000)
+
+- For admin dashboard
+    ```bash
+    python manage.py createsuperuser
+    python manage.py runserver
+    ```
+
+    Admin dashboard will run on [127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
 
 ## Troubleshooting
 
