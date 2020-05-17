@@ -25,6 +25,7 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
+* [Tests](#tests)
 * [Contact](#contact)
 
 
@@ -48,22 +49,39 @@ project locally.
 
 ### 🤚 **Requirements**
 - Python 3.7
-- Pipenv ([installation guide](https://docs.pipenv.org/en/latest/install/#installing-pipenv))
+- Pipenv ([installationinstallation guide](https://docs.pipenv.org/en/latest/install/#installing-pipenv)) or
+- Poetry ([installationinstallation guide](https://python-poetry.org/docs/))
 
 ### ⏳ **Running locally**
 - Pull the repo
 - Create new pipenv environment (virtualenv)
     ```bash
     pipenv --python 3.7
+  
+  --for poetry
+  
+  poetry shell
     ```
 - Install requirements
     ```bash
     pipenv install
+  
+  for poetry 
+  
+  poetry install
     ```
 - To run on local
     ```bash
     pipenv shell
+  
+  --for poetry
+  
+  poetry shell
+  
     python manage.py migrate
+  
+  python manage.py collectstatic
+  
     python manage.py runserver
     ```
 
@@ -79,7 +97,17 @@ project locally.
 
 ## Troubleshooting
 
+<!-- Testing -->
+## Testing
+-  Django tests
 
+    ```bash
+    python manage.py test  
+    ```
+- Alternatively tox
+    ```bash
+    tox
+    ```
 <!-- CONTACT -->
 ## Contact
 

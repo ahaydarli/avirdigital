@@ -5,3 +5,8 @@ out
 db.sqlite3
 .DS_Store
 requirements.txt
+.tox
+/.pytest_cache/
+*__pycache__/
+staticfiles
+*.egg-info
