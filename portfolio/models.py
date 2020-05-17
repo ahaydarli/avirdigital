@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils.six import with_metaclass
+from six import with_metaclass
 from django.utils.translation import ugettext_lazy as _
 
 from linguist.metaclasses import ModelMeta as LinguistMeta
@@ -35,7 +35,7 @@ class PortfolioCategory(with_metaclass(LinguistMeta, models.Model)):
         }
 class PortfolioImages(models.Model):
     file = models.ImageField(upload_to='portfolio')
-    portfolio = models.ForeignKey('Portfolio', on_delete='CASCADE')
+    portfolio = models.ForeignKey('Portfolio', on_delete=models.CASCADE)
 
 class Portfolio(with_metaclass(LinguistMeta, models.Model)):
     title = models.CharField(max_length=255, null=True)

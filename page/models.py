@@ -1,6 +1,6 @@
 from django.db import models
 from django.template.defaultfilters import slugify
-from django.utils.six import with_metaclass
+from six import with_metaclass
 from django.utils.translation import ugettext_lazy as _
 from uuid import uuid4
 from linguist.metaclasses import ModelMeta as LinguistMeta
