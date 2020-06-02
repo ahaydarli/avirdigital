@@ -1,4 +1,5 @@
 <!-- PROJECT SHIELDS -->
+![Django CI](https://github.com/ahaydarli/avirdigital/workflows/Django%20CI/badge.svg?branch=master)
 <!-- [![Build Status][build-shield]]() -->
 
 <!-- PROJECT LOGO -->
