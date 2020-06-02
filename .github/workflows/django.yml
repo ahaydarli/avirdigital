@@ -28,4 +28,4 @@ jobs:
         pipenv install
     - name: Run Tests
       run: |
-        pipenv run python manage.py test
+        pipenv tox
